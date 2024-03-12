@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankan's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="scr"> -->
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logofinal.jpg" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p><b>Developer</b></p>
+                <h1>Hi, I'm <span class="myname">Ankan Karmakar</span> <br> from Andaman & Nicobar Islands,<br><span class="orange">IN</span><span class="white">D</span><span class="green">IA</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------about---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-colo-1">
+                    <img src="Images/new pic.png">
+                </div>
+                <div class="about-colo-2">
+                    <h1 class="subs">About Me</h1>
+                    <p>I am a diligent and adaptable final-year Computer Science Engineering student specializing in Internet of Things (IoT) at Chandigarh University. Hailing from the serene Andaman and Nicobar Islands, I bring a unique perspective and a strong work ethic to my academic pursuits. As a quick learner, I thrive in dynamic environments and possess a tenacity for overcoming challenges. My dedication to excellence is evident through my hardworking approach, consistently seeking opportunities to enhance my skills and contribute meaningfully. Passionate about leveraging technology for positive change, I aspire to apply my knowledge to create innovative solutions that make the world a better place.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active" onclick="opentab('skills')">SKILLS</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                        <li><span>Web Development</span><br>HTML/CSS/JavaScript<br>Designing Web Interfaces</li>
+                        <li><span>Software Development</span><br>Python/C++/Kotlin<br>Problem-Solving/DSA</li>
+                        <li><span>Database Management</span><br>MySQL/PostgreSQL/Python Flask<br>Manipulation & Management of data</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents second-sty" id="certifications">
+                        <ul>
+                        <li><span><a href="https://www.coursera.org/account/accomplishments/verify/RXNKM5JWLHGH">Crash course on Python by Google</a></span><br>Issued by Coursera</li>
+                        <li><span><a href="https://www.coursera.org/account/accomplishments/verify/NYYM7QYLMCWK">Programming with JavaScript by META</a></span><br>Issued by Coursera</li>
+                        <li><span><a href="https://www.coursera.org/account/accomplishments/verify/2VKKMHEK3MDK">Version Control by META</a></span><br>Issued by Coursera</li>
+                        <li><span><a href="https://www.coursera.org/account/accomplishments/verify/3KA2ZLZV48LN">Introduction to Front-End Development by META</a></span><br>Issued by Coursera</li>
+                        <li><span><a href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL22EE12S2387124002040936">Microprocessors and Microcontrollers</a></span><br>Issued by NPTEL</li>
+                        <li><span><a href="https://coursera.org/verify/professional-cert/PJP48MT7RHEF">Palo Alto Networks Cybersecurity Specialization</a></span><br>Issued by Coursera</li>
+                        <li><span><a href="https://www.coursera.org/account/accomplishments/verify/KQ3NBGURZEG2">Create Serverless Applications by Microsoft</a></span><br>Issued by Coursera</li>
+                    </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                        <li><span>Bachelor of Engineering</span><br>Computer Science & Engineering with Specialization in Internet of Things<br>Chandiagrh University 2020-Present<br>Grade:7.41</li>
+                        <li><span>Intermediate / 12<sup>th</sup> CBSE</span><br>Navy Children School PortBlair<br>Subjects: Mathematics, Computer Science, Physics, Chemistry, English<br>Percentage: 95.2</li>
+                        <li><span>Matriculation / 10<sup>th</sup> CBSE</span><br>Navy Children School PortBlair<br>Subjects: Mathematics, Social Science, Science, Hindi, English<br>Percentage: 92.6</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+
+</body>
+</html>

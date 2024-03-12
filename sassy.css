@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/kirito.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    padding: 10px 5%;
+}
+
+.logo{
+    width: 100px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+}
